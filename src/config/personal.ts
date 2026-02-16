@@ -6,7 +6,7 @@ export const personal = {
   phone: "+91-7532051001",
   location: "Bengaluru, Karnataka",
   linkedin: "https://www.linkedin.com/in/ajay-singh-69a083108/",
-  resumePath: "/resume.pdf",
+  resumePath: "https://assets.thealchemyst.dev/resume.pdf",
   tagline: "Building products at the intersection of GenAI, Web3, fintech, and great UX",
   heroRoles: ["Tech Lead", "Frontend Architect", "GenAI Developer", "Web3 Developer", "Full-Stack Builder"],
 } as const;

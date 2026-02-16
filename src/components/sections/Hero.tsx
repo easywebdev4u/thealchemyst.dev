@@ -112,7 +112,7 @@ export default function Hero() {
           Hello, I&apos;m
         </motion.p>
 
-        <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold tracking-tight mb-4 whitespace-nowrap">
+        <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight mb-4">
           <span className="block">
             <AnimatedText text="AJAY KUMAR" className="" delay={0.2} />
           </span>
@@ -158,11 +158,11 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 1.2 }}
-          className="flex flex-col sm:flex-row items-center justify-center gap-4"
+          className="flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-4 w-full max-w-md sm:max-w-none sm:w-auto mx-auto"
         >
           <MagneticButton
             href="#contact"
-            className="group relative px-10 py-4 rounded-full font-semibold text-sm tracking-wide uppercase overflow-hidden bg-gradient-to-r from-cyan-500 via-accent to-teal-400 text-background shadow-[0_0_30px_rgba(6,182,212,0.25)] hover:shadow-[0_0_50px_rgba(6,182,212,0.5)] transition-all duration-500 hover:scale-105"
+            className="group relative px-6 sm:px-10 py-3 sm:py-4 rounded-full font-semibold text-xs sm:text-sm tracking-wide uppercase overflow-hidden bg-gradient-to-r from-cyan-500 via-accent to-teal-400 text-background shadow-[0_0_30px_rgba(6,182,212,0.25)] hover:shadow-[0_0_50px_rgba(6,182,212,0.5)] transition-all duration-500 hover:scale-105 text-center"
           >
             <span className="relative z-10 flex items-center gap-2">
               Get in Touch
@@ -172,9 +172,9 @@ export default function Hero() {
             <span className="absolute -inset-1 rounded-full bg-gradient-to-r from-cyan-500 via-accent to-teal-400 opacity-30 blur-lg group-hover:opacity-60 transition-opacity duration-500 -z-10" />
           </MagneticButton>
           <MagneticButton
-            href="/resume.pdf"
+            href="https://assets.thealchemyst.dev/resume.pdf"
             download
-            className="group relative px-10 py-4 rounded-full font-semibold text-sm tracking-wide uppercase overflow-hidden border-2 border-accent/30 text-foreground/80 hover:text-accent backdrop-blur-sm transition-all duration-500 hover:scale-105 hover:border-accent/80 hover:shadow-[0_0_30px_rgba(6,182,212,0.15)]"
+            className="group relative px-6 sm:px-10 py-3 sm:py-4 rounded-full font-semibold text-xs sm:text-sm tracking-wide uppercase overflow-hidden border-2 border-accent/30 text-foreground/80 hover:text-accent backdrop-blur-sm transition-all duration-500 hover:scale-105 hover:border-accent/80 hover:shadow-[0_0_30px_rgba(6,182,212,0.15)] text-center"
           >
             <span className="relative z-10 flex items-center gap-2">
               <Download className="w-4 h-4 group-hover:animate-bounce" strokeWidth={2.5} />

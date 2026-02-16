@@ -39,7 +39,7 @@ export default function About() {
       <div className="max-w-6xl mx-auto">
         <SectionHeading label="01 / About" title="Who I Am" />
 
-        <div className="grid md:grid-cols-[1fr_280px] gap-10 items-start">
+        <div className="flex flex-col-reverse md:grid md:grid-cols-[1fr_280px] gap-10 items-start">
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -99,10 +99,10 @@ export default function About() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="relative group"
           >
-            <div className="aspect-[3/4] rounded-2xl bg-gradient-to-br from-surface-light to-surface border border-surface-border overflow-hidden relative w-full max-h-[380px]">
+            <div className="aspect-[3/4] rounded-2xl bg-gradient-to-br from-surface-light to-surface border border-surface-border overflow-hidden relative w-full max-w-[250px] mx-auto md:max-w-none md:mx-0 max-h-[380px]">
               <div className="absolute inset-0 bg-gradient-to-br from-accent/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10" />
               <img
-                src="/photo.jpg"
+                src="https://assets.thealchemyst.dev/photo.jpg"
                 alt="Ajay Kumar Singh"
                 className="w-full h-full object-cover object-top grayscale-[30%] group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105"
               />

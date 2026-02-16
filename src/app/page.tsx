@@ -7,16 +7,22 @@ import {
   Hero,
   About,
   Experience,
-  Skills,
+  SkillConstellation,
   Awards,
+  Testimonials,
   Education,
+  Blog,
   Contact,
+  Terminal,
   Footer,
   SmoothScroll,
   CustomCursor,
   Preloader,
   ProgressBar,
   ScrollToTop,
+  CommandPalette,
+  ThemeToggle,
+  MusicToggle,
 } from "@/components";
 
 export default function Home() {
@@ -48,6 +54,9 @@ export default function Home() {
       <ProgressBar />
       <GridBackground />
       <Navbar />
+      <CommandPalette />
+      <ThemeToggle />
+      <MusicToggle />
       <main className="relative z-10">
         <Hero />
         <div className="section-divider max-w-4xl mx-auto" />
@@ -55,13 +64,19 @@ export default function Home() {
         <div className="section-divider max-w-4xl mx-auto" />
         <Experience />
         <div className="section-divider max-w-4xl mx-auto" />
-        <Skills />
+        <SkillConstellation />
         <div className="section-divider max-w-4xl mx-auto" />
         <Awards />
         <div className="section-divider max-w-4xl mx-auto" />
+        <Testimonials />
+        <div className="section-divider max-w-4xl mx-auto" />
         <Education />
         <div className="section-divider max-w-4xl mx-auto" />
+        <Blog />
+        <div className="section-divider max-w-4xl mx-auto" />
         <Contact />
+        <div className="section-divider max-w-4xl mx-auto" />
+        <Terminal />
       </main>
       <Footer />
       <ScrollToTop />

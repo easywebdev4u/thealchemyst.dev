@@ -6,6 +6,7 @@ import { useRef } from "react";
 import { ChevronDown, ChevronUp } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import SectionHeading from "@/components/shared/SectionHeading";
+import SpotlightCard from "@/components/shared/SpotlightCard";
 import { Role } from "@/types";
 import { roles } from "@/config/experience";
 
@@ -18,7 +19,7 @@ function ExperienceCard({ role, index }: { role: Role; index: number }) {
 
   return (
     <motion.div
-      initial={{ opacity: 0, x: isEven ? -60 : 60 }}
+      initial={{ opacity: 0, x: isEven ? -30 : 30 }}
       whileInView={{ opacity: 1, x: 0 }}
       viewport={{ once: true, margin: "-50px" }}
       transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
@@ -33,7 +34,7 @@ function ExperienceCard({ role, index }: { role: Role; index: number }) {
       <motion.div
         whileHover={{ y: -4, boxShadow: "0 0 30px rgba(6,182,212,0.08)" }}
         transition={{ duration: 0.2 }}
-        className="bg-surface/50 border border-surface-border rounded-xl p-6 hover:border-accent/20 transition-colors duration-300"
+        className="bg-surface/50 border border-surface-border rounded-xl p-4 sm:p-6 hover:border-accent/20 transition-colors duration-300"
       >
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1 mb-4">
           <div>
@@ -100,10 +101,11 @@ export default function Experience() {
   const scaleY = useSpring(scrollYProgress, { stiffness: 100, damping: 30 });
 
   return (
-    <section id="experience" className="py-32 px-6">
+    <section id="experience" className="py-32 px-6 overflow-hidden">
       <div className="max-w-6xl mx-auto">
         <SectionHeading label="02 / Experience" title="Where I've Worked" />
 
+        <SpotlightCard className="relative" >
         <div className="relative" ref={containerRef}>
           {/* Animated timeline line */}
           <motion.div
@@ -117,6 +119,7 @@ export default function Experience() {
             ))}
           </div>
         </div>
+        </SpotlightCard>
       </div>
     </section>
   );

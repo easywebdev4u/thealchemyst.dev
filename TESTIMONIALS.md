@@ -1,0 +1,7 @@
+# Real LinkedIn Testimonials
+
+## 1. Anup Jodish — Engineering Manager, Paytm
+"As Engineering Manager at Paytm, I enjoyed working with Ajay Singh on numerous projects, including Paytm Hotels, Paytm Mall, ONDC, Seller Panel, and others. Ajay, a gifted frontend developer, joined us as a Software Engineer and quickly rose to a Senior role within a year due to his exceptional dedication and ability to perform under pressure. Over the course of his 2.5-year tenure at Paytm, Ajay demonstrated technical proficiency across various JS frameworks and took initiatives that considerably reduced developer time, increasing our overall team efficiency. His strong communication skills complemented his technical expertise, making him a standout contributor to our projects. I wholeheartedly recommend Ajay to any organization seeking a blend of technical prowess and dedication."
+
+## 2. Abhishek Aman — Engineering, UpGrad
+"I have had the pleasure of working with Ajay on multiple projects and can confidently say that he is an exceptional individual both professionally and personally. His technical expertise and dedication to work are unmatched, and he consistently goes above and beyond to deliver quality results. He also possesses excellent communication skills, making him an asset to any team he works with. Beyond his professional qualities, Ajay is a wonderful human being with a positive attitude and a great sense of humor. He is always willing to lend a helping hand and is a joy to work with."

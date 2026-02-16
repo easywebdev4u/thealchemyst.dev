@@ -72,7 +72,7 @@ export default function Navbar() {
             </a>
           ))}
           <a
-            href="/resume.pdf"
+            href="https://assets.thealchemyst.dev/resume.pdf"
             download
             className="text-sm px-4 py-2 border border-accent/30 text-accent rounded-lg hover:bg-accent/10 transition-all duration-200"
           >
@@ -127,7 +127,7 @@ export default function Navbar() {
                 </a>
               ))}
               <a
-                href="/resume.pdf"
+                href="https://assets.thealchemyst.dev/resume.pdf"
                 download
                 className="text-accent border border-accent/30 rounded-lg px-4 py-2 text-center hover:bg-accent/10 transition-all"
               >

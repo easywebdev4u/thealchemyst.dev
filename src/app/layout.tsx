@@ -49,7 +49,7 @@ export const metadata: Metadata = {
     siteName: "The Alchemyst — Ajay Kumar Singh",
     images: [
       {
-        url: "/photo.jpg",
+        url: "https://assets.thealchemyst.dev/photo.jpg",
         width: 600,
         height: 800,
         alt: "Ajay Kumar Singh — Tech Lead",
@@ -61,7 +61,7 @@ export const metadata: Metadata = {
     title: "Ajay Kumar Singh — Tech Lead | GenAI & Web3 Developer",
     description:
       "Building products at the intersection of GenAI, Web3, fintech, and great UX.",
-    images: ["/photo.jpg"],
+    images: ["https://assets.thealchemyst.dev/photo.jpg"],
   },
   robots: {
     index: true,
