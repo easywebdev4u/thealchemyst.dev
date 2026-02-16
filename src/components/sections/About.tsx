@@ -97,9 +97,9 @@ export default function About() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="relative group"
+            className="relative group w-full flex justify-center md:block"
           >
-            <div className="aspect-[3/4] rounded-2xl bg-gradient-to-br from-surface-light to-surface border border-surface-border overflow-hidden relative w-full max-w-[250px] mx-auto md:max-w-none md:mx-0 max-h-[380px]">
+            <div className="aspect-[3/4] rounded-2xl bg-gradient-to-br from-surface-light to-surface border border-surface-border overflow-hidden relative w-[220px] sm:w-[250px] md:w-full max-h-[320px] sm:max-h-[380px]">
               <div className="absolute inset-0 bg-gradient-to-br from-accent/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10" />
               <img
                 src="https://assets.thealchemyst.dev/photo.jpg"
@@ -107,8 +107,8 @@ export default function About() {
                 className="w-full h-full object-cover object-top grayscale-[30%] group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105"
               />
             </div>
-            {/* Decorative border offset */}
-            <div className="absolute -inset-2 rounded-2xl border border-accent/10 -z-10 group-hover:border-accent/20 transition-colors duration-500" />
+            {/* Decorative border offset — hidden on mobile since image is centered */}
+            <div className="hidden md:block absolute -inset-2 rounded-2xl border border-accent/10 -z-10 group-hover:border-accent/20 transition-colors duration-500" />
           </motion.div>
         </div>
       </div>
