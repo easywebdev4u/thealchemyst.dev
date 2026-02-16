@@ -129,7 +129,7 @@ export default function Terminal() {
   };
 
   return (
-    <section id="terminal" className="py-32 px-6" ref={sectionRef}>
+    <section id="terminal" className="py-16 sm:py-24 px-6" ref={sectionRef}>
       <div className="max-w-4xl mx-auto">
         <SectionHeading label="09 / Terminal" title="Interactive Terminal" />
 

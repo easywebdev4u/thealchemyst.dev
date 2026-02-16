@@ -3,6 +3,7 @@
 import { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { navLinks as links } from "@/config/navigation";
+import ThemeToggle from "@/components/shared/ThemeToggle";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -18,7 +19,6 @@ export default function Navbar() {
       setHidden(y > 300 && y > lastScrollY.current);
       lastScrollY.current = y;
 
-      // Active section detection
       const sections = links.map((l) => l.href.slice(1));
       let current = "";
       for (const id of sections) {
@@ -71,6 +71,7 @@ export default function Navbar() {
               )}
             </a>
           ))}
+          <ThemeToggle />
           <a
             href="https://assets.thealchemyst.dev/resume.pdf"
             download
@@ -80,28 +81,31 @@ export default function Navbar() {
           </a>
         </div>
 
-        {/* Mobile toggle */}
-        <button
-          onClick={() => setMobileOpen(!mobileOpen)}
-          className="md:hidden flex flex-col gap-1.5 p-2"
-          aria-label="Toggle menu"
-        >
-          <span
-            className={`w-5 h-0.5 bg-foreground transition-transform duration-200 ${
-              mobileOpen ? "rotate-45 translate-y-2" : ""
-            }`}
-          />
-          <span
-            className={`w-5 h-0.5 bg-foreground transition-opacity duration-200 ${
-              mobileOpen ? "opacity-0" : ""
-            }`}
-          />
-          <span
-            className={`w-5 h-0.5 bg-foreground transition-transform duration-200 ${
-              mobileOpen ? "-rotate-45 -translate-y-2" : ""
-            }`}
-          />
-        </button>
+        {/* Mobile: theme toggle + hamburger */}
+        <div className="flex md:hidden items-center gap-3">
+          <ThemeToggle />
+          <button
+            onClick={() => setMobileOpen(!mobileOpen)}
+            className="flex flex-col gap-1.5 p-2"
+            aria-label="Toggle menu"
+          >
+            <span
+              className={`w-5 h-0.5 bg-foreground transition-transform duration-200 ${
+                mobileOpen ? "rotate-45 translate-y-2" : ""
+              }`}
+            />
+            <span
+              className={`w-5 h-0.5 bg-foreground transition-opacity duration-200 ${
+                mobileOpen ? "opacity-0" : ""
+              }`}
+            />
+            <span
+              className={`w-5 h-0.5 bg-foreground transition-transform duration-200 ${
+                mobileOpen ? "-rotate-45 -translate-y-2" : ""
+              }`}
+            />
+          </button>
+        </div>
       </div>
 
       {/* Mobile menu */}

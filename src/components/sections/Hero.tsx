@@ -158,7 +158,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 1.2 }}
-          className="flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-4 w-full max-w-md sm:max-w-none sm:w-auto mx-auto"
+          className="flex flex-col sm:flex-row items-center justify-center gap-4"
         >
           <MagneticButton
             href="#contact"

@@ -53,7 +53,7 @@ export default function Testimonials() {
   };
 
   return (
-    <section id="testimonials" className="py-32 px-6">
+    <section id="testimonials" className="py-16 sm:py-24 px-6">
       <div className="max-w-4xl mx-auto">
         <SectionHeading label="05 / Testimonials" title="What People Say" />
 

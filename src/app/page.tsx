@@ -21,7 +21,6 @@ import {
   ProgressBar,
   ScrollToTop,
   CommandPalette,
-  ThemeToggle,
   MusicToggle,
 } from "@/components";
 
@@ -55,27 +54,17 @@ export default function Home() {
       <GridBackground />
       <Navbar />
       <CommandPalette />
-      <ThemeToggle />
       <MusicToggle />
       <main className="relative z-10">
         <Hero />
-        <div className="section-divider max-w-4xl mx-auto" />
         <About />
-        <div className="section-divider max-w-4xl mx-auto" />
         <Experience />
-        <div className="section-divider max-w-4xl mx-auto" />
         <SkillConstellation />
-        <div className="section-divider max-w-4xl mx-auto" />
         <Awards />
-        <div className="section-divider max-w-4xl mx-auto" />
         <Testimonials />
-        <div className="section-divider max-w-4xl mx-auto" />
         <Education />
-        <div className="section-divider max-w-4xl mx-auto" />
         <Blog />
-        <div className="section-divider max-w-4xl mx-auto" />
         <Contact />
-        <div className="section-divider max-w-4xl mx-auto" />
         <Terminal />
       </main>
       <Footer />

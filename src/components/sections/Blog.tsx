@@ -42,7 +42,7 @@ const posts: BlogPost[] = [
 
 export default function Blog() {
   return (
-    <section id="blog" className="py-32 px-6">
+    <section id="blog" className="py-16 sm:py-24 px-6">
       <div className="max-w-6xl mx-auto">
         <SectionHeading label="07 / Blog" title="Writing & Thoughts" />
 

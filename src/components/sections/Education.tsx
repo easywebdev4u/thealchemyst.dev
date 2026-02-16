@@ -5,7 +5,7 @@ import SectionHeading from "@/components/shared/SectionHeading";
 
 export default function Education() {
   return (
-    <section className="py-32 px-6">
+    <section className="py-16 sm:py-24 px-6">
       <div className="max-w-6xl mx-auto">
         <SectionHeading label="05 / Education" title="Academic Background" />
 

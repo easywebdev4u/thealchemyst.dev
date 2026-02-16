@@ -87,7 +87,7 @@ const links = [
 
 export default function Contact() {
   return (
-    <section id="contact" className="py-32 px-6">
+    <section id="contact" className="py-16 sm:py-24 px-6">
       <div className="max-w-6xl mx-auto">
         <SectionHeading label="06 / Contact" title="Let's Connect" />
 

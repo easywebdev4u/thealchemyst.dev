@@ -20,7 +20,7 @@ const awards = [
 
 export default function Awards() {
   return (
-    <section className="py-32 px-6">
+    <section className="py-16 sm:py-24 px-6">
       <div className="max-w-6xl mx-auto">
         <SectionHeading label="04 / Recognition" title="Awards" />
 

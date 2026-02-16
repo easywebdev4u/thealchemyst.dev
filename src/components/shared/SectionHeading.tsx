@@ -15,7 +15,7 @@ export default function SectionHeading({ label, title }: SectionHeadingProps) {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-100px" }}
       transition={{ duration: 0.5 }}
-      className="mb-16"
+      className="mb-8 sm:mb-12"
     >
       <p className="font-mono text-accent text-sm tracking-widest uppercase mb-3">
         {label}

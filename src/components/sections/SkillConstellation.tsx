@@ -147,9 +147,14 @@ export default function SkillConstellation() {
   }, [hovered]);
 
   return (
-    <section id="skills" className="py-32 px-6 overflow-hidden">
+    <section id="skills" className="py-16 sm:py-24 px-6 overflow-hidden">
       <div className="max-w-6xl mx-auto">
-        <SectionHeading label="03 / Skills" title="Tech Constellation" />
+        <div className="hidden md:block">
+          <SectionHeading label="03 / Skills" title="Tech Constellation" />
+        </div>
+        <div className="md:hidden">
+          <SectionHeading label="03 / Skills" title="Skills & Tools" />
+        </div>
 
         {/* Legend */}
         <div className="flex flex-wrap gap-3 sm:gap-4 mb-8 justify-center">
