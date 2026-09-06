@@ -2,19 +2,21 @@ import { Role } from "@/types";
 
 export const roles: Role[] = [
   {
-    company: "PandaMoney",
+    company: "ZoltMoney",
     title: "Tech Lead",
     period: "Feb 2025 — Present",
     location: "Bengaluru",
     highlights: [
-      "Solo-architecting and building the entire product from ground up — frontend, backend, and infrastructure",
-      "Designing and implementing the backend in Go Lang, handling API architecture, business logic, and system design",
-      "Building the frontend with Next.js and TypeScript for a modern fintech experience",
-      "Managing cloud infrastructure on AWS — S3, CloudFront, Amplify, Secrets Manager",
-      "Owning the full product lifecycle: architecture → development → deployment → iteration",
-      "Leveraging Generative AI for rapid prototyping, AI-assisted development, and accelerated product delivery",
+      "Architecting and building a cross-border remittance platform end to end — backend, mobile, and infrastructure",
+      "Go microservices on AWS EKS covering auth, wallets, KYC, payouts and transaction history, deployed via GitOps",
+      "React Native app with biometric-signed transactions, SSL pinning and hardware-backed key storage",
+      "Custodial blockchain wallets across multiple chains, with automated treasury sweeps",
+      "Multi-provider KYC orchestration with per-corridor routing and webhook reconciliation across six markets",
+      "Event-driven notification infrastructure fanning out to push, SMS, email and websocket from one publisher",
+      "Fraud surface: device identity, request nonces, velocity limits and SMS-pumping defence",
+      "Leveraging Generative AI for rapid prototyping and accelerated delivery",
     ],
-    tech: ["Next.js", "Go", "TypeScript", "AWS", "GenAI", "LLM APIs", "CloudFront"],
+    tech: ["Go", "React Native", "TypeScript", "Kubernetes", "AWS", "PostgreSQL", "RabbitMQ", "GenAI"],
   },
   {
     company: "Six Sigma Sports (ST Labs)",

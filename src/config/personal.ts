@@ -1,12 +1,11 @@
 export const personal = {
   name: "Ajay Kumar Singh",
   shortName: "AJ",
-  title: "Tech Lead & Senior Frontend Engineer",
+  title: "Tech Lead & Full-Stack Architect",
   email: "aksingh1493@gmail.com",
-  phone: "+91-7532051001",
   location: "Bengaluru, Karnataka",
   linkedin: "https://www.linkedin.com/in/ajay-singh-69a083108/",
   resumePath: "https://assets.thealchemyst.dev/resume.pdf",
-  tagline: "Building products at the intersection of GenAI, Web3, fintech, and great UX",
-  heroRoles: ["Tech Lead", "Frontend Architect", "GenAI Developer", "Web3 Developer", "Full-Stack Builder"],
+  tagline: "Building payments infrastructure at the intersection of fintech, Web3, and GenAI",
+  heroRoles: ["Tech Lead", "Full-Stack Architect", "Payments Engineer", "Web3 Developer", "GenAI Developer"],
 } as const;

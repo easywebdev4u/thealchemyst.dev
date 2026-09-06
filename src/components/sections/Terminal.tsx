@@ -3,11 +3,22 @@
 import { useState, useRef, useEffect, useCallback } from "react";
 import { motion, useInView } from "framer-motion";
 import SectionHeading from "@/components/shared/SectionHeading";
+import { roles } from "@/config/experience";
+import { personal } from "@/config/personal";
 
 interface Line {
   type: "input" | "output";
   content: string;
 }
+
+/**
+ * Rendered from the same config the Experience section uses. A hardcoded copy
+ * lived here previously and had drifted on every date, so the terminal and the
+ * page disagreed about the same career.
+ */
+const EXPERIENCE = roles
+  .map((r) => `> ${r.company} — ${r.title} (${r.period})\n  ${r.highlights[0]}`)
+  .join("\n");
 
 const COMMANDS: Record<string, string> = {
   help: `Available commands:
@@ -27,29 +38,18 @@ Web3:        CosmJS, Web3Auth, DeFi Wallets
 Backend:     Go, Node.js, REST, GraphQL
 Cloud:       AWS S3, CloudFront, Amplify
 AI/ML:       LLM Integration, RAG Systems, AI Agents`,
-  experience: `> PandaMoney — Tech Lead (2024 - Present)
-  Solo-architecting full product: React, Go, AWS
-> Six Sigma Sports — SDE III (2023 - 2024)
-  Blockchain gaming platform with DeFi
-> Paytm — Senior SDE (2021 - 2023)
-  Hotels, Mall, ONDC — millions of users
-> UpGrad — SDE II (2019 - 2021)
-  Ed-tech platform features
-> GlobalLogic — SDE (2018 - 2019)
-  Enterprise solutions
-> Trakinvest — SDE (2017 - 2018)
-  Fintech trading platform`,
-  contact: `Email:    aksingh1493@gmail.com
-LinkedIn: linkedin.com/in/ajay-singh-69a083108/
-Location: Bengaluru, India`,
+  experience: EXPERIENCE,
+  contact: `Email:    ${personal.email}
+LinkedIn: ${personal.linkedin.replace(/^https?:\/\/(www\.)?/, "").replace(/\/$/, "")}
+Location: ${personal.location}`,
   "hire-me": `🚀 Let's build something amazing together!
 
 I'm always open to interesting projects and opportunities.
-Drop me a line: aksingh1493@gmail.com
+Drop me a line: ${personal.email}
 
 P.S. You get bonus points for finding this command! 😄`,
   ls: "about.txt  resume.txt  skills.json  projects/  .secret",
-  "cat resume.txt": "Downloading resume... Just kidding! 📄\nGrab it at: https://assets.thealchemyst.dev/resume.pdf",
+  "cat resume.txt": `Downloading resume... Just kidding! 📄\nGrab it at: ${personal.resumePath}`,
   "cat .secret": "🤫 Nice try! But the real secrets are in the code.",
   cd: "Nice try, but this is a single-directory universe.",
   sudo: "Permission denied: You're not root here! 😄",

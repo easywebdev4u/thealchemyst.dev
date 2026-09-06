@@ -50,11 +50,11 @@ export default function About() {
             <p className="text-lg text-foreground/70 leading-relaxed">
               I&apos;m a{" "}
               <span className="text-foreground">
-                Tech Lead & Senior Frontend Engineer
+                Tech Lead & Full-Stack Architect
               </span>{" "}
               with over 9 years of experience crafting high-performance web
               applications. Currently{" "}
-              <span className="text-accent">solo-architecting and building the entire product at PandaMoney</span> — frontend, backend (Go), and cloud infrastructure (AWS) — from the ground up.
+              <span className="text-accent">solo-architecting and building the entire product at ZoltMoney</span> — frontend, backend (Go), and cloud infrastructure (AWS) — from the ground up.
             </p>
             <p className="text-foreground/50 leading-relaxed">
               My journey has taken me through some of India&apos;s most
