@@ -16,9 +16,9 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Ajay Kumar Singh — Tech Lead | GenAI & Web3 Developer",
+  title: "Ajay Kumar Singh — Tech Lead | Payments Infrastructure, Go & React Native",
   description:
-    "Portfolio of Ajay Kumar Singh — Tech Lead & Senior Frontend Engineer with 9+ years of experience. Specializing in GenAI, Web3, fintech, and building production-grade products with Go, Next.js, and AI-assisted development.",
+    "Portfolio of Ajay Kumar Singh — Tech Lead with 9+ years building products used by millions. Cross-border payments infrastructure: Go microservices on Kubernetes, React Native, AWS, custodial wallets and KYC orchestration.",
   keywords: [
     "Ajay Kumar Singh",
     "Tech Lead",
@@ -34,6 +34,14 @@ export const metadata: Metadata = {
     "LLM Integration",
     "Prompt Engineering",
     "Full Stack Developer",
+    "Golang",
+    "Kubernetes",
+    "AWS",
+    "Microservices",
+    "Distributed Systems",
+    "React Native",
+    "Payments Infrastructure",
+    "Fintech",
     "Bengaluru",
     "India",
   ],
@@ -44,9 +52,9 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "https://thealchemyst.dev",
-    title: "Ajay Kumar Singh — Tech Lead | GenAI & Web3 Developer",
+    title: "Ajay Kumar Singh — Tech Lead | Payments Infrastructure, Go & React Native",
     description:
-      "Building products at the intersection of GenAI, Web3, fintech, and great UX. 9+ years of frontend expertise, now leading full-stack product development.",
+      "Building cross-border payments infrastructure — Go, Kubernetes, AWS, React Native. 9+ years shipping to millions; ex-Paytm, Web3.",
     siteName: "The Alchemyst — Ajay Kumar Singh",
     images: [
       {
@@ -59,9 +67,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Ajay Kumar Singh — Tech Lead | GenAI & Web3 Developer",
+    title: "Ajay Kumar Singh — Tech Lead | Payments Infrastructure, Go & React Native",
     description:
-      "Building products at the intersection of GenAI, Web3, fintech, and great UX.",
+      "Building cross-border payments infrastructure — Go, Kubernetes, AWS, React Native.",
     images: ["https://assets.thealchemyst.dev/photo.jpg"],
   },
   robots: {

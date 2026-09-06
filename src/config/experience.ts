@@ -19,7 +19,7 @@ export const roles: Role[] = [
     tech: ["Go", "React Native", "TypeScript", "Kubernetes", "AWS", "PostgreSQL", "RabbitMQ", "GenAI"],
   },
   {
-    company: "Six Sigma Sports (ST Labs)",
+    company: "Six Sigma Sports",
     title: "SDE-3 — Web3",
     period: "Jun 2022 — Feb 2025",
     location: "Bengaluru",
